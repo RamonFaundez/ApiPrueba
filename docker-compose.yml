@@ -1,0 +1,11 @@
+version: '1'
+services:
+  nodejs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
+    ports:
+      - "8080:8080"
+    restart: always
