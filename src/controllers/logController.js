@@ -35,18 +35,18 @@ const getUserLogs = (req, res) => {
 
 const createLog = (req, res) => {
     const { body } = req;
-    if (!body.roleId || !body.userId) {
+    if (!body.permissionId || !body.userId) {
         res.status(400).send({
             status: "FAILED",
             data: {
-                error: "One of the following keys is missing or is empty in request body: 'name', 'userId'",
+                error: "One of the following keys is missing or is empty in request body: 'permissionId', 'userId'",
             },
         });
         return;
     }
     const newLog = {
         userId: body.userId,
-        roleId: body.roleId,
+        permissionId: body.permissionId,
     };
     try {
         const createdLog = logService.createLog(newLog);

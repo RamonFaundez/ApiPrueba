@@ -11,3 +11,6 @@ Para bajar  la API utilizar
 ``` bash
 docker-compose down
 ```
+
+>**nombre**: Administrator
+>**contraseña**: 123546

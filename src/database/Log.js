@@ -10,6 +10,7 @@ const getAllLogs = () => {
                 message: "Can't find logs",
             };
         }
+        return logs;
     } catch (error) {
         throw { status: 500, message: error };
     }

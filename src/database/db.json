@@ -1,4 +1,14 @@
 {
+    "users": [
+        {
+            "name": "Administrador",
+            "password": "$2b$10$bRwwcRaokTIKfhue.hEoS.UAhY75JHu2PKVKOhz.6NFuOAMlQp4w6",
+            "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+            "id": "c9dd4c10-2fb2-46ae-b353-692391170ac6",
+            "createdAt": "3/9/2023, 7:46:23 AM",
+            "updatedAt": "3/9/2023, 7:46:23 AM"
+        }
+    ],
     "permission": [
         {
             "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
@@ -21,5 +31,12 @@
             "actions": ["read"]
         }
     ],
-    "logs": []
+    "logs": [
+        {
+            "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
+            "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+            "id": "f307c4c4-0a63-43c7-88d1-3169d865becb",
+            "createdAt": "3/9/2023, 7:36:24 AM"
+        }
+    ]
 }
