@@ -1,0 +1,20 @@
+{
+    "permission": [
+        {
+            "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+            "role": "Administrator"
+        },
+        {
+            "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+            "role": "Employee"
+        },
+        {
+            "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+            "role": "User"
+        },
+        {
+            "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
+            "name": "Other"
+        }
+    ]
+}
