@@ -2,19 +2,24 @@
     "permission": [
         {
             "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-            "role": "Administrator"
+            "role": "Administrator",
+            "actions": ["create", "read", "edit", "delete"]
         },
         {
             "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-            "role": "Employee"
+            "role": "Employee",
+            "actions": ["create", "read", "edit"]
         },
         {
             "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-            "role": "User"
+            "role": "User",
+            "actions": ["create", "read", "edit"]
         },
         {
             "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
-            "name": "Other"
+            "name": "Guess",
+            "actions": ["read"]
         }
-    ]
+    ],
+    "logs": []
 }
