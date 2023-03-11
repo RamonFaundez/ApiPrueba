@@ -1,42 +1,58 @@
 {
     "users": [
         {
+            "id": "c9dd4c10-2fb2-46ae-b353-692391170ac6",
             "name": "Administrador",
             "password": "$2b$10$bRwwcRaokTIKfhue.hEoS.UAhY75JHu2PKVKOhz.6NFuOAMlQp4w6",
-            "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-            "id": "c9dd4c10-2fb2-46ae-b353-692391170ac6",
-            "createdAt": "3/9/2023, 7:46:23 AM",
-            "updatedAt": "3/9/2023, 7:46:23 AM"
+            "email": "admin@prueba.cl",
+            "permissionId": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+            "createdAt": 1678506062,
+            "updatedAt": 1678506062
         }
     ],
     "permission": [
         {
             "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-            "role": "Administrator",
-            "actions": ["create", "read", "edit", "delete"]
+            "role": "Administrador",
+            "actions": {
+                "usersTable": ["create", "read", "edit", "delete"],
+                "permissionTable": ["create", "read", "edit", "delete"],
+                "logsTable": ["create", "read", "edit", "delete"]
+            }
         },
         {
             "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-            "role": "Employee",
-            "actions": ["create", "read", "edit"]
+            "role": "Trabajador",
+            "actions": {
+                "usersTable": ["create", "read", "edit"],
+                "permissionTable": ["read"],
+                "logsTable": ["read"]
+            }
         },
         {
             "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-            "role": "User",
-            "actions": ["create", "read", "edit"]
+            "role": "Usuario",
+            "actions": {
+                "usersTable": ["read"],
+                "permissionTable": [],
+                "logsTable": []
+            }
         },
         {
             "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
-            "name": "Guess",
-            "actions": ["read"]
+            "role": "Invitado",
+            "actions": {
+                "usersTable": [],
+                "permissionTable": [],
+                "logsTable": []
+            }
         }
     ],
     "logs": [
         {
-            "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
-            "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
             "id": "f307c4c4-0a63-43c7-88d1-3169d865becb",
-            "createdAt": "3/9/2023, 7:36:24 AM"
+            "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
+            "createdAt": 1678506062
         }
     ]
 }

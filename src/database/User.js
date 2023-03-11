@@ -30,11 +30,11 @@ const getUser = (userId) => {
 const createUser = (newUser) => {
     try {
         const isAlreadyAdded =
-            DB.users.findIndex((user) => user.name === newUser.name) > -1;
+            DB.users.findIndex((user) => user.email === newUser.email) > -1;
         if (isAlreadyAdded) {
             throw {
                 status: 400,
-                message: `User with the name '${newUser.name}' already exists`,
+                message: `User with the E-mail '${newUser.email}' already exists`,
             };
         }
         DB.users.push(newUser);

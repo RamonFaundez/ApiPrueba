@@ -6,4 +6,13 @@ const saveToDatabase = (DB) => {
     });
 };
 
-module.exports = { saveToDatabase };
+const setTimeStamp = () => {
+    const date = new Date().toLocaleString("es-MX", { timeZone: "America/Santiago"});
+    const dt = Date.parse(date);
+    return dt / 1000;
+};
+
+module.exports = {
+    saveToDatabase,
+    setTimeStamp,
+};

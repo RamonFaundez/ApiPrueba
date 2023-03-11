@@ -36,7 +36,7 @@ const getUser = (req, res) => {
 
 const createUser = (req, res) => {
     const { body } = req;
-    if (!body.name || !body.password || !body.permissionId) {
+    if (!body.name || !body.password || !body.email || !body.permissionId) {
         res.status(400).send({
             status: "FAILED",
             data: {
@@ -49,6 +49,7 @@ const createUser = (req, res) => {
     const newUser = {
         name: body.name,
         password: passEnc,
+        email: body.email,
         permissionId: body.permissionId,
     };
     try {
@@ -71,7 +72,7 @@ const updateUser = (req, res) => {
         res.status(400).send({
             status: "FAILED",
             data: {
-                error: "One of the following keys is required and is empty in request body: 'name', 'password', 'permissionId'",
+                error: "One of the following keys is required and is empty in request body: 'name', 'password', 'email', 'permissionId'",
             },
         });
         return;

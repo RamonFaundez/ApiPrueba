@@ -1,5 +1,6 @@
 const { v4: uuid } = require("uuid");
 const Log = require("../database/Log");
+const { setTimeStamp } = require("../database/utils");
 
 const getAllLogs = () => {
     try {
@@ -20,10 +21,11 @@ const getUserLogs = (userId) => {
 };
 
 const createLog = (newLog) => {
+    const timestamp = setTimeStamp()
     const logToInsert = {
         ...newLog,
         id: uuid(),
-        createdAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
+        createdAt: timestamp,
     };
     try {
         const createdLog = Log.createLog(logToInsert);

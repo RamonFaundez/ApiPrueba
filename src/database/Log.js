@@ -18,7 +18,7 @@ const getAllLogs = () => {
 
 const getUserLogs = (userId) => {
     try {
-        const logs = DB.logs.find((log) => log.userId === userId);
+        const logs = DB.logs.filter((log) => log.userId === userId);
         if (!logs) {
             throw {
                 status: 400,

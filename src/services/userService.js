@@ -1,5 +1,6 @@
 const { v4: uuid } = require("uuid");
 const User = require("../database/User");
+const { setTimeStamp } = require("../database/utils");
 
 const getAllusers = () => {
     try {
@@ -20,11 +21,12 @@ const getUser = (userId) => {
 };
 
 const createUser = (newUser) => {
+    const timestamp = setTimeStamp();
     const userToInsert = {
         ...newUser,
         id: uuid(),
-        createdAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
-        updatedAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
+        createdAt: timestamp,
+        updatedAt: timestamp,
     };
     try {
         const createdUser = User.createUser(userToInsert);
