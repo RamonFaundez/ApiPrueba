@@ -1,58 +1,119 @@
 {
-    "users": [
-        {
-            "id": "c9dd4c10-2fb2-46ae-b353-692391170ac6",
-            "name": "Administrador",
-            "password": "$2b$10$bRwwcRaokTIKfhue.hEoS.UAhY75JHu2PKVKOhz.6NFuOAMlQp4w6",
-            "email": "admin@prueba.cl",
-            "permissionId": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-            "createdAt": 1678506062,
-            "updatedAt": 1678506062
-        }
-    ],
-    "permission": [
-        {
-            "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-            "role": "Administrador",
-            "actions": {
-                "usersTable": ["create", "read", "edit", "delete"],
-                "permissionTable": ["create", "read", "edit", "delete"],
-                "logsTable": ["create", "read", "edit", "delete"]
-            }
-        },
-        {
-            "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-            "role": "Trabajador",
-            "actions": {
-                "usersTable": ["create", "read", "edit"],
-                "permissionTable": ["read"],
-                "logsTable": ["read"]
-            }
-        },
-        {
-            "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-            "role": "Usuario",
-            "actions": {
-                "usersTable": ["read"],
-                "permissionTable": [],
-                "logsTable": []
-            }
-        },
-        {
-            "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
-            "role": "Invitado",
-            "actions": {
-                "usersTable": [],
-                "permissionTable": [],
-                "logsTable": []
-            }
-        }
-    ],
-    "logs": [
-        {
-            "id": "f307c4c4-0a63-43c7-88d1-3169d865becb",
-            "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
-            "createdAt": 1678506062
-        }
-    ]
+  "users": [
+    {
+      "name": "Arturito",
+      "password": "$2b$10$itFkmvNHaaK0kuaop2QRJeX3wFaqaE0Jl0szOzx/JiWFkkVK56FNi",
+      "email": "r2d2@prueba.cl",
+      "permissionId": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+      "id": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+      "createdAt": 1698976953,
+      "updatedAt": 1698976953
+    },
+    {
+      "name": "123",
+      "password": "$2b$10$c5VlQq.cbUypreyQ/7tjo.qitc2lBsof4zVoDAEIlp5CVPCVvapxm",
+      "email": "123@asd.asd",
+      "permissionId": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+      "id": "8646d0f0-2802-4867-8815-f233e6ae91c3",
+      "createdAt": 1701562973,
+      "updatedAt": 1701562973
+    },
+    {
+      "name": "aksudasdj",
+      "password": "$2b$10$0XSixpD7rqyfvx/igZL2BO0ZMy57DF9q8hbJzf32V76smqO5pzSX2",
+      "email": "123qwe@sd",
+      "permissionId": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+      "id": "ae165b0b-7cdd-4a4e-aa64-31f2ebdfa1d0",
+      "createdAt": 1701562985,
+      "updatedAt": 1701562985
+    },
+    {
+      "name": "asdasdasdas",
+      "password": "$2b$10$/Qj8dvf4Mf.onLGwnjVUNOI8LwlqzK6wRxaZQNoTgukG4N9dGoJ7K",
+      "email": "asdasd@asdasdmasdk",
+      "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+      "id": "ac0d4c95-dfdf-4510-95da-975b3f02f63e",
+      "createdAt": 1701562997,
+      "updatedAt": 1701562997
+    },
+    {
+      "name": "qwedkjahsd",
+      "password": "$2b$10$/O0dhSBHxeO8qX1RDNgN8uz6lKmZDgprVj/v8kndQ4OEg5hJ74IxO",
+      "email": "asd@12123.sdasd",
+      "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+      "id": "350504bc-5e49-4ac9-a711-53e657acfadf",
+      "createdAt": 1701563011,
+      "updatedAt": 1701563011
+    }
+  ],
+  "permission": [
+    {
+      "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+      "role": "Administrador",
+      "actions": {
+        "usersTable": [
+          "create",
+          "read",
+          "edit",
+          "delete"
+        ],
+        "permissionTable": [
+          "create",
+          "read",
+          "edit",
+          "delete"
+        ],
+        "logsTable": [
+          "create",
+          "read",
+          "edit",
+          "delete"
+        ]
+      }
+    },
+    {
+      "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+      "role": "Trabajador",
+      "actions": {
+        "usersTable": [
+          "create",
+          "read",
+          "edit"
+        ],
+        "permissionTable": [
+          "read"
+        ],
+        "logsTable": [
+          "read"
+        ]
+      }
+    },
+    {
+      "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+      "role": "Usuario",
+      "actions": {
+        "usersTable": [
+          "read"
+        ],
+        "permissionTable": ["-"],
+        "logsTable": ["-"]
+      }
+    },
+    {
+      "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
+      "role": "Invitado",
+      "actions": {
+        "usersTable": ["-"],
+        "permissionTable": ["-"],
+        "logsTable": ["-"]
+      }
+    }
+  ],
+  "logs": [
+    {
+      "id": "f307c4c4-0a63-43c7-88d1-3169d865becb",
+      "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
+      "createdAt": 1678506062
+    }
+  ]
 }
