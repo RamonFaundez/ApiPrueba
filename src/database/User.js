@@ -1,5 +1,5 @@
 const DB = require("./db.json");
-const { saveToDatabase } = require("./utils");
+const { saveToDatabase, setTimeStamp } = require("./utils");
 
 const getAllusers = () => {
     try {
@@ -56,10 +56,11 @@ const updateUser = (userId, changes) => {
                 message: `Can't find user with the id '${userId}'`,
             };
         }
+        const timestamp = setTimeStamp();
         const updatedUser = {
             ...DB.users[indexForUpdated],
             ...changes,
-            updatedAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
+            updatedAt: timestamp,
         };
         DB.users[indexForUpdated] = updatedUser;
         saveToDatabase(DB);

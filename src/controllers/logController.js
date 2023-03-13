@@ -33,23 +33,23 @@ const getUserLogs = (req, res) => {
     }
 };
 
-const createLog = (req, res) => {
+const checkLogin = (req, res) => {
     const { body } = req;
-    if (!body.permissionId || !body.userId) {
+    if (!body.email || !body.password) {
         res.status(400).send({
             status: "FAILED",
             data: {
-                error: "One of the following keys is missing or is empty in request body: 'permissionId', 'userId'",
+                error: "One of the following keys is missing or is empty in request body: 'email', 'password'",
             },
         });
         return;
     }
-    const newLog = {
-        userId: body.userId,
-        permissionId: body.permissionId,
+    const credentials = {
+        email: body.email,
+        password: body.password,
     };
     try {
-        const createdLog = logService.createLog(newLog);
+        const createdLog = logService.checkLogin(credentials);
         res.status(201).send({ status: "OK", data: createdLog });
     } catch (error) {
         res.status(error?.status || 500).send({
@@ -62,5 +62,5 @@ const createLog = (req, res) => {
 module.exports = {
     getAllLogs,
     getUserLogs,
-    createLog,
+    checkLogin,
 };

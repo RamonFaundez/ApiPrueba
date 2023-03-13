@@ -12,7 +12,7 @@ router
     .get("/logs/:userId", logController.getUserLogs)
     .get("/:userId", userController.getUser)
     .post("/", userController.createUser)
-    .post("/logs", logController.createLog)
+    .post("/login", logController.checkLogin)
     .patch("/:userId", userController.updateUser)
     .delete("/:userId", userController.deleteUser);
 
