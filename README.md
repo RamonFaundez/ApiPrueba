@@ -5,7 +5,7 @@
 2. Para levantar la API, utilizar el siguiente comando en la raíz del proyecto
 
 ``` bash
-docker-compose up
+docker-compose up --build
 ```
 
 3. Para bajar la API, utilizar el siguiente comando en la raíz del proyecto
