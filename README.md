@@ -1,16 +1,15 @@
-# Prueba Técnica Landscape
+# Prueba Técnica
 
-Para levantar la API utilizar
+1. Iniciar Docker
+
+2. Para levantar la API, utilizar el siguiente comando en la raíz del proyecto
 
 ``` bash
-docker-compose up
+docker-compose up --build
 ```
 
-Para bajar  la API utilizar
+3. Para bajar la API, utilizar el siguiente comando en la raíz del proyecto
 
 ``` bash
 docker-compose down
 ```
-
->**nombre**: Administrator
->**contraseña**: 123546
