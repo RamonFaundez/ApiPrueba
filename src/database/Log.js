@@ -34,11 +34,11 @@ const getUserLogs = (userId) => {
     }
 };
 
-const createLog = (newLog) => {
+const checkLogin = (newLog, user) => {
     try {
         DB.logs.push(newLog);
         saveToDatabase(DB);
-        return newLog;
+        return user;
     } catch (error) {
         throw {
             status: 500,
@@ -50,5 +50,5 @@ const createLog = (newLog) => {
 module.exports = {
     getAllLogs,
     getUserLogs,
-    createLog,
+    checkLogin,
 };

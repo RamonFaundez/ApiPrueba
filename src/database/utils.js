@@ -7,9 +7,9 @@ const saveToDatabase = (DB) => {
 };
 
 const setTimeStamp = () => {
-    const date = new Date().toLocaleString("es-MX", { timeZone: "America/Santiago"});
-    const dt = Date.parse(date);
-    return dt / 1000;
+    const date = new Date().toLocaleString("en-CL", { timeZone: "America/Santiago"});
+    const dt = Date.parse(date) / 1000;
+    return dt;
 };
 
 module.exports = {

@@ -1,119 +1,186 @@
 {
-  "users": [
-    {
-      "name": "Arturito",
-      "password": "$2b$10$itFkmvNHaaK0kuaop2QRJeX3wFaqaE0Jl0szOzx/JiWFkkVK56FNi",
-      "email": "r2d2@prueba.cl",
-      "permissionId": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-      "id": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
-      "createdAt": 1698976953,
-      "updatedAt": 1698976953
-    },
-    {
-      "name": "123",
-      "password": "$2b$10$c5VlQq.cbUypreyQ/7tjo.qitc2lBsof4zVoDAEIlp5CVPCVvapxm",
-      "email": "123@asd.asd",
-      "permissionId": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-      "id": "8646d0f0-2802-4867-8815-f233e6ae91c3",
-      "createdAt": 1701562973,
-      "updatedAt": 1701562973
-    },
-    {
-      "name": "aksudasdj",
-      "password": "$2b$10$0XSixpD7rqyfvx/igZL2BO0ZMy57DF9q8hbJzf32V76smqO5pzSX2",
-      "email": "123qwe@sd",
-      "permissionId": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-      "id": "ae165b0b-7cdd-4a4e-aa64-31f2ebdfa1d0",
-      "createdAt": 1701562985,
-      "updatedAt": 1701562985
-    },
-    {
-      "name": "asdasdasdas",
-      "password": "$2b$10$/Qj8dvf4Mf.onLGwnjVUNOI8LwlqzK6wRxaZQNoTgukG4N9dGoJ7K",
-      "email": "asdasd@asdasdmasdk",
-      "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-      "id": "ac0d4c95-dfdf-4510-95da-975b3f02f63e",
-      "createdAt": 1701562997,
-      "updatedAt": 1701562997
-    },
-    {
-      "name": "qwedkjahsd",
-      "password": "$2b$10$/O0dhSBHxeO8qX1RDNgN8uz6lKmZDgprVj/v8kndQ4OEg5hJ74IxO",
-      "email": "asd@12123.sdasd",
-      "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-      "id": "350504bc-5e49-4ac9-a711-53e657acfadf",
-      "createdAt": 1701563011,
-      "updatedAt": 1701563011
-    }
-  ],
-  "permission": [
-    {
-      "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
-      "role": "Administrador",
-      "actions": {
-        "usersTable": [
-          "create",
-          "read",
-          "edit",
-          "delete"
-        ],
-        "permissionTable": [
-          "create",
-          "read",
-          "edit",
-          "delete"
-        ],
-        "logsTable": [
-          "create",
-          "read",
-          "edit",
-          "delete"
-        ]
-      }
-    },
-    {
-      "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
-      "role": "Trabajador",
-      "actions": {
-        "usersTable": [
-          "create",
-          "read",
-          "edit"
-        ],
-        "permissionTable": [
-          "read"
-        ],
-        "logsTable": [
-          "read"
-        ]
-      }
-    },
-    {
-      "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
-      "role": "Usuario",
-      "actions": {
-        "usersTable": [
-          "read"
-        ],
-        "permissionTable": ["-"],
-        "logsTable": ["-"]
-      }
-    },
-    {
-      "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
-      "role": "Invitado",
-      "actions": {
-        "usersTable": ["-"],
-        "permissionTable": ["-"],
-        "logsTable": ["-"]
-      }
-    }
-  ],
-  "logs": [
-    {
-      "id": "f307c4c4-0a63-43c7-88d1-3169d865becb",
-      "userId": "00f983a0-7405-4892-a64e-4dd8157a4ae0",
-      "createdAt": 1678506062
-    }
-  ]
+    "users": [
+        {
+            "name": "Arturito",
+            "password": "$2b$10$HfKFY1AAtFYpTweBsB1.l.Q1UNt15YRUfwMmuvbLlz0cqhq1vH7u.",
+            "email": "r2d2@prueba.cl",
+            "permissionId": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+            "id": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "createdAt": 1698976953,
+            "updatedAt": 1701655912
+        },
+        {
+            "name": "Pedrosky",
+            "password": "$2b$10$AJusTKgX5yQZBpakI69JsOlVu/T6bUBCjhPB7L38VmqtDo7Ao3XCO",
+            "email": "pedro@prueba.cl",
+            "permissionId": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+            "id": "d1c9086e-442a-4f60-9363-90d6d838fced",
+            "createdAt": null,
+            "updatedAt": null
+        },
+        {
+            "name": "Juan Antonio",
+            "password": "$2b$10$P0xLv8O.VUQMO6AyMKaI8esHEAD9YKGu1A7/NP8j2REmPFP/NqhEW",
+            "email": "juancito@prueba.cl",
+            "permissionId": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+            "id": "85ba395e-af33-4487-bf56-5cd32582d6dc",
+            "createdAt": 1678677914,
+            "updatedAt": 1678677914
+        }
+    ],
+    "permission": [
+        {
+            "id": "0806e6f0-f5c7-4b3f-beab-dadfbcc6336d",
+            "role": "Administrador",
+            "actions": {
+                "usersTable": ["create", "read", "edit", "delete"],
+                "permissionTable": ["create", "read", "edit", "delete"],
+                "logsTable": ["create", "read", "edit", "delete"]
+            }
+        },
+        {
+            "id": "21a5a08f-1df2-4eae-98c4-8a3f61f0e1dc",
+            "role": "Trabajador",
+            "actions": {
+                "usersTable": ["create", "read", "edit"],
+                "permissionTable": ["read"],
+                "logsTable": ["read"]
+            }
+        },
+        {
+            "id": "90b40934-6fb0-43d1-be57-4bbf57d7a566",
+            "role": "Usuario",
+            "actions": {
+                "usersTable": ["read"],
+                "permissionTable": ["-"],
+                "logsTable": ["-"]
+            }
+        },
+        {
+            "id": "d2e7625e-0027-43c5-9d02-2c3584cf97a0",
+            "role": "Invitado",
+            "actions": {
+                "usersTable": ["-"],
+                "permissionTable": ["-"],
+                "logsTable": ["-"]
+            }
+        }
+    ],
+    "logs": [
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "d56d050a-3466-4f3c-8743-ca1bd3d48cec",
+            "createdAt": 1701655707
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "a52430c3-d6cf-4dba-b18b-f0730c46eab0",
+            "createdAt": 1701655810
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "f0d0b2e6-9470-4337-9d84-2c2ed78b0245",
+            "createdAt": 1701655920
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "f5d0843f-f055-4d7b-9336-f072aa93d842",
+            "createdAt": 1701656244
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "6a5071c8-37b9-4844-936a-4807041d0490",
+            "createdAt": 1701656887
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "fef81a41-d2c5-456c-adc0-88336f4eb17b",
+            "createdAt": 1701656921
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "e6afaba2-17fe-432e-91c9-ab7cae001c36",
+            "createdAt": 1701657133
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "6177bdcc-3eda-4ece-97c2-da3ff7c12fa5",
+            "createdAt": 1701657347
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "bef041dd-0985-474c-bfab-4bf12f42476c",
+            "createdAt": 1701657363
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "d0f117d7-a893-4bc9-9196-f6861bee9498",
+            "createdAt": 1701657923
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "e91c2715-c9ea-4a6f-8e39-49a4cf73a9c9",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "9719f3a2-cdec-4a26-9730-3dca7d886deb",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "14e96281-ebd0-4fac-8a4d-9bf62e8675b0",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "64483981-500c-4a55-9949-070b01636344",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "960825e5-59c2-4132-aaee-2e14731260af",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "67effac7-a763-4d78-871d-f736da26e300",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "09850d8b-8c64-4b30-869f-202869d8b70c",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "69cee810-c98c-4630-8e78-508beb5308cf",
+            "createdAt": null
+        },
+        {
+            "userId": "f8a9c45b-1721-4c2b-9d16-35b554c023e8",
+            "id": "70168869-0608-42ae-ab23-f32ed5f6242d",
+            "createdAt": null
+        },
+        {
+            "userId": "d1c9086e-442a-4f60-9363-90d6d838fced",
+            "id": "c705618a-1043-4ee1-bbae-0e8794af9344",
+            "createdAt": null
+        },
+        {
+            "userId": "d1c9086e-442a-4f60-9363-90d6d838fced",
+            "id": "d9338cbd-4b85-4a3c-b469-886f1e588180",
+            "createdAt": null
+        },
+        {
+            "userId": "d1c9086e-442a-4f60-9363-90d6d838fced",
+            "id": "83b4592d-756a-4abf-aa0c-26991f04046f",
+            "createdAt": null
+        },
+        {
+            "userId": "85ba395e-af33-4487-bf56-5cd32582d6dc",
+            "id": "87359d0e-b570-4f3c-b78a-842991a27278",
+            "createdAt": 1678677927
+        }
+    ]
 }
